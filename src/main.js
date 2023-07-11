@@ -1,4 +1,6 @@
 import { createApp } from 'vue';
+import '@fontsource/anton';
+import '@fontsource/passion-one';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import './assets/scss/style.scss';
