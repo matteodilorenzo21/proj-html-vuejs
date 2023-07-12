@@ -1,15 +1,20 @@
 <script>
+import PageHero from './PageHero.vue';
 export default {
-
+components: {PageHero},
 };
 </script>
 
 <template>
  <header class="px-5">
     <div class="d-flex justify-content-between align-items-center h-100">
+
+        <!-- HEADER LOGO -->
         <div>
             <a href="#"><img src="../../public/Logo.png" alt="logo"></a>
         </div>
+
+        <!-- HEADER NAVBAR -->
         <div>
             <ul class="d-flex pt-3">
                <li><a href="#">HOME</a></li>
@@ -24,6 +29,7 @@ export default {
         </div>
     </div>
  </header>
+ <PageHero />
 </template>
 
 <style lang="scss" scoped>

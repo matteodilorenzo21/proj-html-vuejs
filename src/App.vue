@@ -1,7 +1,8 @@
 <script>
 import PageHeader from './components/PageHeader.vue';
+import PageHero from './components/PageHero.vue';
 export default {
-  components: {PageHeader},
+  components: {PageHeader, PageHero},
 };
 </script>
 
