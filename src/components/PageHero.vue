@@ -66,11 +66,11 @@ export default {
 @import '../assets/scss/_vars.scss';
   
 #hero {
-    height: 750px;
+    height: 800px;
 }
   
 img {
-    max-height: 750px;
+    max-height: 800px;
 }
   
 .carousel-caption {
@@ -92,7 +92,7 @@ img {
     button {
         color: $white;
         border: 1px solid $orange;
-        padding: 10px 40px;
+        padding: 15px 50px;
         background-color: transparent;
         transition-delay: 0.1s;
 

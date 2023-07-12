@@ -37,13 +37,14 @@ components: {PageHero},
 @import '../assets/scss/_vars.scss';
 
 header {
-    height: 100px;
-    background-color: $black;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    z-index: 2;
+  height: 100px;
+  background-color: $black;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0px 1px 10px 0px rgba(255, 255, 255, 0.2);
 }
 
 li {
