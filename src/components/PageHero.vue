@@ -1,5 +1,7 @@
 <script>
+import PageHeroCard from './PageHeroCard.vue';
 export default {
+    components: {PageHeroCard},
     mounted() {
     // STARTING CAROUSEL AT PAGE START
     const carousel = new bootstrap.Carousel(document.getElementById('carouselExampleControls'), {
@@ -14,12 +16,12 @@ export default {
 
 <template>
 
-    <div id="hero">
+  <div id="hero">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
         <div class="carousel-inner">
           <!-- FIRST IMAGE SHOWED -->
           <div class="carousel-item active">
-            <img src="../assets/img/backgrounds/counter_parallax.jpg" class="d-block w-100" alt="Image 1">
+            <img src="../assets/img/backgrounds/parallax_bredcum.jpg" class="d-block w-100" alt="Image 1">
             <div class="carousel-caption">
               <h3>INSTRUMENTAL ROCK</h3>
               <h1>MUSIC IN THIS VIDEO</h1>
@@ -29,7 +31,7 @@ export default {
 
           <!-- SECOND IMAGE SHOWED -->
           <div class="carousel-item">
-            <img src="../assets/img/backgrounds/parallax_bredcum.jpg" class="d-block w-100" alt="Image 2">
+            <img src="../assets/img/backgrounds/counter_parallax.jpg" class="d-block w-100" alt="Image 2">
             <div class="carousel-caption">
               <h3>INSTRUMENTAL ROCK</h3>
               <h1>MUSIC OF THE SPIRIT</h1>
@@ -50,7 +52,11 @@ export default {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+  </div>
+
+  <div id="hero-card">
+    <PageHeroCard />
+  </div>
 
 </template>
   
@@ -94,5 +100,11 @@ img {
             background-color: $orange;
         }
     }
+}
+
+#hero-card {
+  position: absolute;
+  top: 85%;
+  left: 5.5%;
 }
 </style>
