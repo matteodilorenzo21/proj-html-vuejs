@@ -1,13 +1,15 @@
 <script>
 import PageHeader from './components/PageHeader.vue';
 import PageHero from './components/PageHero.vue';
+import PageMain from './components/PageMain.vue';
 export default {
-  components: {PageHeader, PageHero},
+  components: {PageHeader, PageHero, PageMain},
 };
 </script>
 
 <template>
 <PageHeader />
+<PageMain />
 </template>
 
 <style lang="scss" scoped>
